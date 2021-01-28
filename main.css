@@ -1,0 +1,30 @@
+
+* {
+    display: block;
+
+}
+
+body {
+    display: flex;
+
+}
+
+.output {
+    width: 300px;
+}
+
+.calculator-main {
+    display:grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px,auto) repeat(4, 100px);
+    border:5px solid black;
+
+}
+
+.output {
+    grid-column: span 3;
+}
+
+.button {
+    width: 100px;
+}
