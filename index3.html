@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button data-clear>C</button>
+        <div class="output">
+            <div data-result class="displayValue"></div>
+        </div>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operator class="operator">%</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operator class="operator">*</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operator class="operator">-</button>
+        <button data-number>0</button>
+        <button data-number>.</button>
+        <button data-equals>=</button>
+        <button data-operator class="operator">+</button>
+</body>
+</html>
+
+
+* {
+    display: block;
+
+}
+
+body {
+    display: flex;
+
+}
+
+.output {
+    width: 300px;
+}
+
+.calculator-main {
+    display:grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px,auto) repeat(4, 100px);
+    border:5px solid black;
+
+}
+
+.output {
+    grid-column: span 3;
+}
+
+.button {
+    width: 100px;
+}
